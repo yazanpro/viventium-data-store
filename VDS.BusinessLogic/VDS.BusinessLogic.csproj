@@ -66,6 +66,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Companies\CompaniesService.cs" />
+    <Compile Include="Companies\ICompaniesService.cs" />
     <Compile Include="DataStore\DataStoreService.cs" />
     <Compile Include="DataStore\IDataStoreService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

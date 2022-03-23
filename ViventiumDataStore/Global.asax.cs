@@ -9,6 +9,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using VDS.BusinessLogic.Companies;
 using VDS.BusinessLogic.DataStore;
 using VDS.DataAccess;
 
@@ -37,8 +38,9 @@ namespace ViventiumDataStore
             // Register your Web API controllers.
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
-            // Register custom implementation
+            // Register custom services
             builder.RegisterType<DataStoreService>().AsImplementedInterfaces().InstancePerRequest();
+            builder.RegisterType<CompaniesService>().AsImplementedInterfaces().InstancePerRequest();
             builder.RegisterType<DbService>().AsImplementedInterfaces().InstancePerRequest();
 
             // Set the dependency resolver to be Autofac.

@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiModels\CompanyHeader.cs" />
+    <Compile Include="ApiModels\Company.cs" />
+    <Compile Include="ApiModels\Employee.cs" />
+    <Compile Include="ApiModels\EmployeeHeader.cs" />
     <Compile Include="DataModels\Company.cs" />
     <Compile Include="DataModels\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

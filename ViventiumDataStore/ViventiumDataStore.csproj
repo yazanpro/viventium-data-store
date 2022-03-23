@@ -256,6 +256,10 @@
       <Project>{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}</Project>
       <Name>VDS.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VDS.Domain\VDS.Domain.csproj">
+      <Project>{b8d2df9b-fd4b-44cd-85ce-d94646f79584}</Project>
+      <Name>VDS.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
