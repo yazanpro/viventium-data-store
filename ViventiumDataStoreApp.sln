@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViventiumDataStore", "Viven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViventiumDataStore.Tests", "ViventiumDataStore.Tests\ViventiumDataStore.Tests.csproj", "{43F262A5-B0BB-4696-88AE-E7F519C5297F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VDS.DataAccess", "VDS.DataAccess\VDS.DataAccess.csproj", "{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VDS.Domain", "VDS.Domain\VDS.Domain.csproj", "{09024CFA-54A2-4532-9649-7D039F64A817}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{43F262A5-B0BB-4696-88AE-E7F519C5297F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43F262A5-B0BB-4696-88AE-E7F519C5297F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43F262A5-B0BB-4696-88AE-E7F519C5297F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0460CF5-FA5F-43EC-B21D-36E5ACE16FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09024CFA-54A2-4532-9649-7D039F64A817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09024CFA-54A2-4532-9649-7D039F64A817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09024CFA-54A2-4532-9649-7D039F64A817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09024CFA-54A2-4532-9649-7D039F64A817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
