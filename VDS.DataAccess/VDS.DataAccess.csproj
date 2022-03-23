@@ -52,11 +52,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStoreContext.cs" />
+    <Compile Include="Migrations\202203230235284_InitialDB.cs" />
+    <Compile Include="Migrations\202203230235284_InitialDB.designer.cs">
+      <DependentUpon>202203230235284_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202203230235284_InitialDB.resx">
+      <DependentUpon>202203230235284_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VDS.Domain\VDS.Domain.csproj">
+      <Project>{b8d2df9b-fd4b-44cd-85ce-d94646f79584}</Project>
+      <Name>VDS.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
