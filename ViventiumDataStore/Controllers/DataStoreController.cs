@@ -25,8 +25,15 @@ namespace ViventiumDataStore.Controllers
         [HttpPost]
         public IHttpActionResult DataStore([FromBody] string csv)
         {
-            _dataStoreService.PopulateDataStore(csv);
-            return Ok();
+            try
+            {
+                _dataStoreService.ClearAndImportDataStore(csv);
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

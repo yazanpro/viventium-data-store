@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStoreContext.cs" />
+    <Compile Include="DbService.cs" />
+    <Compile Include="IDbService.cs" />
     <Compile Include="Migrations\202203230235284_InitialDB.cs" />
     <Compile Include="Migrations\202203230235284_InitialDB.designer.cs">
       <DependentUpon>202203230235284_InitialDB.cs</DependentUpon>

@@ -2,6 +2,6 @@
 {
     public interface IDataStoreService
     {
-        void PopulateDataStore(string csv);
+        void ClearAndImportDataStore(string csv);
     }
 }

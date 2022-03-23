@@ -10,6 +10,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using VDS.BusinessLogic.DataStore;
+using VDS.DataAccess;
 
 namespace ViventiumDataStore
 {
@@ -38,6 +39,7 @@ namespace ViventiumDataStore
 
             // Register custom implementation
             builder.RegisterType<DataStoreService>().AsImplementedInterfaces().InstancePerRequest();
+            builder.RegisterType<DbService>().AsImplementedInterfaces().InstancePerRequest();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();
