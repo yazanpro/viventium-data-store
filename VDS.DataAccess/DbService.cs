@@ -14,9 +14,10 @@ namespace VDS.DataAccess
         {
             using (var context = new DataStoreContext())
             {
-                context.Database.ExecuteSqlCommand("TRUNCATE TABLE [Employees]"
-                    + "DELETE FROM [Companies]"
-                    + "DBCC CHECKIDENT ([Companies], RESEED, 0)");
+                if (context.Database.Exists())
+                    context.Database.ExecuteSqlCommand("TRUNCATE TABLE [Employees]"
+                        + "DELETE FROM [Companies]"
+                        + "DBCC CHECKIDENT ([Companies], RESEED, 0)");
             }
         }
 
