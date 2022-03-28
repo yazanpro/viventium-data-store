@@ -10,7 +10,7 @@ namespace ViventiumDataStore.Controllers
 {
     public class DataStoreController : ApiController
     {
-        private IDataStoreService _dataStoreService;
+        private readonly IDataStoreService _dataStoreService;
 
         public DataStoreController(IDataStoreService dataStoreService)
         {

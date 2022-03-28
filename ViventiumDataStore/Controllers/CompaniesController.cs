@@ -11,7 +11,7 @@ namespace ViventiumDataStore.Controllers
 {
     public class CompaniesController : ApiController
     {
-        private ICompaniesService _companiesService;
+        private readonly ICompaniesService _companiesService;
 
         public CompaniesController(ICompaniesService companiesService)
         {

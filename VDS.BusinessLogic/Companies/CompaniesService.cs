@@ -10,7 +10,7 @@ namespace VDS.BusinessLogic.Companies
 {
     public class CompaniesService : ICompaniesService
     {
-        private IDbService _dbService;
+        private readonly IDbService _dbService;
 
         public CompaniesService(IDbService dbService)
         {

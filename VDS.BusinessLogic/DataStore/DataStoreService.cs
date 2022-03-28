@@ -13,7 +13,7 @@ namespace VDS.BusinessLogic.DataStore
 {
     public class DataStoreService : IDataStoreService
     {
-        private IDbService _dbService;
+        private readonly IDbService _dbService;
 
         public DataStoreService(IDbService dbService)
         {
